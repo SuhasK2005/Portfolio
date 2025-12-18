@@ -132,6 +132,20 @@ const Navbar = () => {
                 </span>
               </div>
             </a>
+             <a
+              href="#contact"
+              onClick={(e) => handleNavClick(e, "contact")}
+              className="relative overflow-hidden px-5 py-2 rounded-full transition-all duration-300 text-sm font-medium group text-white/80 hover:text-white"
+            >
+              <div className="relative overflow-hidden">
+                <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                  Contact
+                </span>
+                <span className="absolute top-full left-0 transition-transform duration-300 ease-out group-hover:-translate-y-full">
+                  Contact
+                </span>
+              </div>
+            </a>
           </div>
 
           {/* Right Side - CTA Button */}
@@ -143,13 +157,13 @@ const Navbar = () => {
             >
               <div className="relative overflow-hidden z-10">
                 <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
-                  Get In Touch
+                  Download Resume
                 </span>
                 <span className="absolute top-full left-0 transition-transform duration-300 ease-out group-hover:-translate-y-full">
-                  Get In Touch
+                  Download Resume
                 </span>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-400 to-blue-500 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-500 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"></div>
             </a>
           </div>
 
