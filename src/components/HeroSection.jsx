@@ -22,7 +22,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-6xl md:text-8xl font-bold leading-tight transition-colors duration-500 text-white">
+          <h1 className="text-5xl md:text-8xl font-bold leading-tight transition-colors duration-500 text-white pb-4 md:pb-0">
             Hi, I'm Suhas
             <br />
             <span className="bg-gradient-to-t from-purple-500 to-white bg-clip-text text-transparent">
