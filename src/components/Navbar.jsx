@@ -74,7 +74,7 @@ const Navbar = () => {
       <nav
         className={`fixed top-6 left-1/2 transform -translate-x-1/2 w-[80%] max-w-7xl z-50 transition-all duration-500 ${
           isScrolled
-            ? "bg-black/80 backdrop-blur-md border border-blue-500/40 shadow-2xl shadow-blue-500/25 glow-effect"
+            ? "bg-black/80 backdrop-blur-md border border-purple-500/40 shadow-2xl shadow-purple-500/25 glow-effect"
             : "bg-black/50 backdrop-blur-sm border border-white/10"
         } rounded-full px-8 py-3`}
       >
@@ -132,7 +132,7 @@ const Navbar = () => {
                 </span>
               </div>
             </a>
-             <a
+            <a
               href="#contact"
               onClick={(e) => handleNavClick(e, "contact")}
               className="relative overflow-hidden px-5 py-2 rounded-full transition-all duration-300 text-sm font-medium group text-white/80 hover:text-white"
@@ -153,17 +153,17 @@ const Navbar = () => {
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, "contact")}
-              className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-full transition-all duration-300 text-sm font-medium shadow-lg shadow-blue-600/30 hover:shadow-blue-500/50 group"
+              className="relative overflow-hidden bg-gradient-to-r from-purple-900 to-purple-900 text-white px-6 py-2 rounded-full transition-all duration-300 text-sm font-medium shadow-lg shadow-purple-600/30 hover:shadow-purple-500/50 group"
             >
               <div className="relative overflow-hidden z-10">
                 <span className="block transition-transform duration-300 ease-out group-hover:-translate-y-full">
-                  Download Resume
+                  Download CV
                 </span>
                 <span className="absolute top-full left-0 transition-transform duration-300 ease-out group-hover:-translate-y-full">
-                  Download Resume
+                  Download CV
                 </span>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-500 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-800 to-purple-500 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"></div>
             </a>
           </div>
 
@@ -195,8 +195,8 @@ const Navbar = () => {
 
         <style jsx>{`
           .glow-effect {
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3),
-              0 0 40px rgba(59, 130, 246, 0.2), 0 0 80px rgba(59, 130, 246, 0.1);
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.3),
+              0 0 40px rgba(168, 85, 247, 0.2), 0 0 80px rgba(168, 85, 247, 0.1);
           }
         `}</style>
       </nav>
@@ -217,7 +217,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Content */}
         <div
-          className={`absolute top-24 left-1/2 transform -translate-x-1/2 w-[80%] max-w-md bg-black/90 backdrop-blur-md border border-blue-500/40 rounded-3xl shadow-2xl shadow-blue-500/25 transition-all duration-500 ease-out ${
+          className={`absolute top-24 left-1/2 transform -translate-x-1/2 w-[80%] max-w-md bg-black/90 backdrop-blur-md border border-purple-500/40 rounded-3xl shadow-2xl shadow-purple-500/25 transition-all duration-500 ease-out ${
             isMobileMenuOpen
               ? "translate-y-0 opacity-100 scale-100"
               : "-translate-y-8 opacity-0 scale-95"
@@ -228,30 +228,30 @@ const Navbar = () => {
             <a
               href="#home"
               onClick={(e) => handleNavClick(e, "home")}
-              className="block px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium hover:bg-blue-600/20 border border-transparent hover:border-blue-500/30 text-white/80 hover:text-white"
+              className="block px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium hover:bg-purple-600/20 border border-transparent hover:border-purple-500/30 text-white/80 hover:text-white"
             >
               Home
             </a>
             <a
               href="#about"
               onClick={(e) => handleNavClick(e, "about")}
-              className="block px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium hover:bg-blue-600/20 border border-transparent hover:border-blue-500/30 text-white/80 hover:text-white"
+              className="block px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium hover:bg-purple-600/20 border border-transparent hover:border-purple-500/30 text-white/80 hover:text-white"
             >
               About
             </a>
             <a
               href="#projects"
               onClick={(e) => handleNavClick(e, "projects")}
-              className="block px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium hover:bg-blue-600/20 border border-transparent hover:border-blue-500/30 text-white/80 hover:text-white"
+              className="block px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium hover:bg-purple-600/20 border border-transparent hover:border-purple-500/30 text-white/80 hover:text-white"
             >
               Projects
             </a>
             /* Mobile CTA Button */
-            <div className="pt-4 border-t border-blue-500/20">
+            <div className="pt-4 border-t border-purple-500/20">
               <a
                 href="#contact"
                 onClick={(e) => handleNavClick(e, "contact")}
-                className="block bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium shadow-lg shadow-blue-600/30 hover:shadow-blue-500/50 text-center hover:from-blue-500 hover:to-blue-700"
+                className="block bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium shadow-lg shadow-purple-600/30 hover:shadow-purple-500/50 text-center hover:from-purple-500 hover:to-purple-700"
               >
                 Get In Touch
               </a>
