@@ -33,7 +33,6 @@ const SkeletonTwo = () => {
               Tailwind CSS
             </span>
           </div>
-          
         </div>
       </div>
     </div>
@@ -61,7 +60,7 @@ const SkeletonThree = () => {
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             />
           </svg>
-          <span className="text-sm md:text-base">your.email@example.com</span>
+          <span className="text-sm md:text-base">suhask6624@gmail.com</span>
         </div>
         <div className="flex items-center gap-3">
           <svg
@@ -99,7 +98,7 @@ const SkeletonThree = () => {
               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <span className="text-sm md:text-base">Your City, Country</span>
+          <span className="text-sm md:text-base">Chennai, India</span>
         </div>
       </div>
     </div>
@@ -108,20 +107,21 @@ const SkeletonThree = () => {
 
 const SkeletonFour = () => {
   return (
-    <div className="p-4 md:p-6">
-      <p className="font-bold text-2xl md:text-4xl text-white mb-4">About Me</p>
-      <p className="font-normal text-sm md:text-base leading-relaxed text-neutral-200">
-        I'm a passionate Full Stack Developer with expertise in building modern
-        web applications. I love creating elegant solutions to complex problems
-        and turning ideas into reality. With a strong foundation in both
-        frontend and backend technologies, I strive to deliver exceptional user
-        experiences that make a difference.
-      </p>
-      <p className="font-normal text-sm md:text-base leading-relaxed text-neutral-200 mt-3">
-        When I'm not coding, you can find me exploring new technologies,
-        contributing to open-source projects, or sharing knowledge with the
-        developer community.
-      </p>
+    <div
+      className="relative p-4 md:p-8 h-full overflow-hidden flex items-end"
+      style={{
+        backgroundImage: "url(/b1.svg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Left side - Text */}
+      <div className="relative pr-8 z-10 max-w-md">
+        <h2 className="text-2xl md:text-4xl lg:text-3xl font-bold text-white leading-tight">
+          I prioritize client collaboration, fostering open communication
+        </h2>
+      </div>
     </div>
   );
 };
