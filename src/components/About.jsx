@@ -69,7 +69,7 @@ const SkeletonOne = () => {
 
 const SkeletonTwo = () => {
   return (
-    <div className="p-6 md:p-8 flex flex-col items-center justify-center h-full">
+    <div className="p-6 md:p-1 flex flex-col items-center justify-center h-full">
       <p className="font-bold text-2xl md:text-3xl text-white mb-6 text-center">
         Skills & Expertise
       </p>
@@ -155,7 +155,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div
-      className="relative p-4 md:p-8 h-full overflow-hidden flex items-end"
+      className="relative p-4 md:p-8 md:pt-25 h-full overflow-hidden flex items-end"
       style={{
         backgroundImage: "url(/b1.svg)",
         backgroundSize: "cover",

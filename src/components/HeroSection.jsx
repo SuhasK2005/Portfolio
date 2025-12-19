@@ -13,7 +13,7 @@ const HeroSection = () => {
 
       <div className="relative z-30 max-w-7xl mx-auto w-full">
         {/* Content Container */}
-        <div className="text-center mt-10">
+        <div className="text-center mt-5">
           {/* NEW Badge */}
           <div className="inline-flex items-center gap-2 bg-purple-600/20 border border-purple-500/30 rounded-full px-4 py-2 mb-2">
             <span className="text-sm font-medium text-purple-300">
