@@ -1,4 +1,5 @@
 import { LayoutGrid } from "./ui/layout-grid";
+import { DottedGlowBackground } from "./ui/dotted-background";
 
 const SkeletonOne = () => {
   return (
@@ -103,48 +104,65 @@ const SkeletonTwo = () => {
 
 const SkeletonThree = () => {
   return (
-    <div className="p-6 md:p-8 flex flex-col items-center justify-center h-full">
-      <p className="font-bold text-2xl md:text-3xl text-white mb-6 text-center">
-        Get In Touch
-      </p>
-      <div className="space-y-4 text-neutral-200">
-        <div className="flex items-center gap-3">
-          <svg
-            className="w-5 h-5 text-purple-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
-          <span className="text-sm md:text-base">suhask6624@gmail.com</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <svg
-            className="w-5 h-5 text-purple-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-          </svg>
-          <span className="text-sm md:text-base">Chennai, India</span>
+    <div className="relative h-full w-full bg-black overflow-hidden">
+      {/* Purple-themed dotted background - now the main background */}
+      <DottedGlowBackground
+        className="pointer-events-none"
+        opacity={0.4}
+        gap={12}
+        radius={1.8}
+        color="rgba(168, 85, 247, 0.5)"
+        glowColor="rgba(168, 85, 247, 0.8)"
+        backgroundOpacity={0}
+        speedMin={0.4}
+        speedMax={1.5}
+        speedScale={1}
+      />
+
+      {/* Content with increased z-index to appear above dots */}
+      <div className="relative z-10 p-6 md:p-8 flex flex-col items-center justify-center h-full">
+        <p className="font-bold text-2xl md:text-3xl text-white mb-6 text-center">
+          Get In Touch
+        </p>
+        <div className="space-y-4 text-neutral-200">
+          <div className="flex items-center gap-3">
+            <svg
+              className="w-5 h-5 text-purple-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <span className="text-sm md:text-base">suhask6624@gmail.com</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <svg
+              className="w-5 h-5 text-purple-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+            <span className="text-sm md:text-base">Chennai, India</span>
+          </div>
         </div>
       </div>
     </div>

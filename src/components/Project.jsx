@@ -250,7 +250,7 @@ const Project = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             Projects
           </h2>
-          <p className="text-neutral-400 text-lg w-1/2">
+          <p className="text-neutral-400 text-lg md:w-1/2">
             These projects represent my learning journey, where I experiment
             with modern technologies and transform ideas into functional
             applications.

@@ -2,6 +2,7 @@ import About from "./components/About";
 import HeroSection from "./components/Herosection";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <HeroSection />
       <About />
       <Project />
+      <Contact />
     </main>
   );
 };
