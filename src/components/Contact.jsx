@@ -3,7 +3,6 @@ import { useState } from "react";
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "",
     email: "",
     message: "",
   });
@@ -32,7 +31,7 @@ const Contact = () => {
         },
         body: JSON.stringify({
           access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
-          name: `${formData.firstName} ${formData.lastName}`,
+          name: formData.firstName,
           email: formData.email,
           message: formData.message,
           to: "suhask6224@gmail.com",
@@ -43,7 +42,7 @@ const Contact = () => {
 
       if (result.success) {
         setSubmitStatus("success");
-        setFormData({ firstName: "", lastName: "", email: "", message: "" });
+        setFormData({ firstName: "", email: "", message: "" });
       } else {
         setSubmitStatus("error");
       }
@@ -56,7 +55,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative min-h-screen pb-20 px-6 overflow-hidden transition-colors duration-500 bg-black">
+    <section
+      id="contact"
+      className="relative min-h-screen pb-12 md:pb-20 px-4 md:px-6 overflow-hidden transition-colors duration-500 bg-black"
+    >
       {/* Background glow effects - matching Project section */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-purple-600/20 rounded-full blur-3xl"></div>
@@ -64,19 +66,19 @@ const Contact = () => {
         <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full mt-16">
+      <div className="relative z-10 max-w-7xl mx-auto w-full mt-8 md:mt-16">
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 md:px-11">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 px-2 md:px-11">
           {/* Left Side - Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4">
                 Get in Touch
               </h2>
-              <p className="text-purple-400 text-lg font-medium mb-4">
+              <p className="text-purple-400 text-base md:text-lg font-medium mb-3 md:mb-4">
                 I'd like to hear from you!
               </p>
-              <p className="text-neutral-400 text-base leading-relaxed">
+              <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
                 Have a project in mind or want to collaborate? Feel free to
                 reach out—I'm always open to discussing new ideas and
                 opportunities.
@@ -159,44 +161,24 @@ const Contact = () => {
           <div>
             <div className="relative bg-gradient-to-br from-purple-900/30 to-black/50 border border-purple-500/20 rounded-2xl overflow-hidden shadow-2xl shadow-purple-900/20 p-8">
               <form onSubmit={handleSubmit} className="space-y-5">
-                {/* First Name and Last Name */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      htmlFor="firstName"
-                      className="block text-sm font-medium text-white mb-2"
-                    >
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2.5 bg-black/40 border border-purple-500/30 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
-                      placeholder="First name"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="lastName"
-                      className="block text-sm font-medium text-white mb-2"
-                    >
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-2.5 bg-black/40 border border-purple-500/30 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
-                      placeholder="Last name"
-                    />
-                  </div>
+                {/* Name Field */}
+                <div>
+                  <label
+                    htmlFor="firstName"
+                    className="block text-sm font-medium text-white mb-2"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-2.5 bg-black/40 border border-purple-500/30 rounded-lg text-white placeholder-neutral-500 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+                    placeholder="Your name"
+                  />
                 </div>
 
                 {/* Email Field */}

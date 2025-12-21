@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-32 pb-20 px-6 overflow-hidden transition-colors duration-500 bg-gradient-to-br from-gray-900 via-black to-purple-900"
+      className="relative min-h-screen pt-34 md:pt-32 md:pb-20 pb-16 px-4 md:px-6 overflow-hidden transition-colors duration-500 bg-gradient-to-br from-gray-900 via-black to-purple-900"
     >
       {/* Background glow effects */}
       <div className="absolute inset-0 overflow-hidden">
@@ -13,16 +13,16 @@ const HeroSection = () => {
 
       <div className="relative z-30 max-w-7xl mx-auto w-full">
         {/* Content Container */}
-        <div className="text-center mt-5">
+        <div className="text-center mt-2 md:mt-5">
           {/* NEW Badge */}
-          <div className="inline-flex items-center gap-2 bg-purple-600/20 border border-purple-500/30 rounded-full px-4 py-2 mb-2">
-            <span className="text-sm font-medium text-purple-300">
+          <div className="inline-flex items-center gap-2 bg-purple-600/20 border border-purple-500/30 rounded-full px-3 md:px-4 py-1.5 md:py-2 mb-3 md:mb-2">
+            <span className="text-xs md:text-sm font-medium text-purple-300">
               Welcome to my Portfolio
             </span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-8xl font-bold leading-tight transition-colors duration-500 text-white pb-4 md:pb-0">
+          <h1 className="text-4xl sm:text-5xl md:text-8xl font-bold leading-tight transition-colors duration-500 text-white pb-3 md:pb-0">
             Hi, I'm Suhas
             <br />
             <span className="bg-gradient-to-t from-purple-500 to-white bg-clip-text text-transparent">
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto leading-relaxed transition-colors duration-500 text-gray-300">
+          <p className="text-base sm:text-lg md:text-2xl mb-4 md:mb-4 max-w-3xl mx-auto leading-relaxed transition-colors duration-500 text-gray-300 px-2">
             Crafting beautiful digital experiences with modern technologies.
             <br />
             Turning ideas into elegant, user-friendly solutions.

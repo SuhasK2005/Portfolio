@@ -9,9 +9,9 @@ const SkeletonOne = () => {
         <div className="relative w-full h-full rounded-lg overflow-hidden bg-black/30 border border-purple-500/20">
           {/* Add your image here */}
           <img
-            src="/your-image.jpg"
+            src="/suhas.jpeg"
             alt="Profile"
-            className="w-full h-full object-cover opacity-80"
+            className="w-full h-62 object-cover opacity-80 object-top"
           />
         </div>
       </div>
@@ -215,7 +215,10 @@ const About = () => {
   ];
 
   return (
-    <section className="relative min-h-screen pb-20 px-6 overflow-hidden transition-colors duration-500 bg-black">
+    <section
+      id="about"
+      className="relative min-h-screen pb-12 md:pb-20 px-4 md:px-6 overflow-hidden transition-colors duration-500 bg-black"
+    >
       {/* Background glow effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-purple-600/20 rounded-full blur-3xl"></div>
@@ -225,13 +228,13 @@ const About = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         {/* Dashboard Mockup */}
-        <div className="relative mt-16">
+        <div className="relative mt-8 md:mt-16">
           {/* Glow effect behind the dashboard */}
           <div className="absolute inset-0 bg-gradient-to-t from-purple-600/15 via-purple-500/10 to-transparent rounded-3xl blur-2xl scale-105"></div>
 
           {/* Dashboard Image Container */}
-          <div className="relative bg-black/40 backdrop-blur-sm border border-purple-500/20 rounded-3xl p-2 md:p-4 shadow-2xl shadow-purple-900/20">
-            <div className="relative rounded-2xl bg-gradient-to-br from-purple-900/20 to-black/50 h-screen">
+          <div className="relative bg-black/40 backdrop-blur-sm border border-purple-500/20 rounded-2xl md:rounded-3xl p-1.5 md:p-4 shadow-2xl shadow-purple-900/20">
+            <div className="relative rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-900/20 to-black/50 min-h-[80vh] md:h-screen">
               {/* Layout Grid Component */}
               <LayoutGrid cards={cards} />
             </div>

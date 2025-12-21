@@ -246,14 +246,21 @@ const Navbar = () => {
             >
               Projects
             </a>
-            /* Mobile CTA Button */
+            <a
+              href="#contact"
+              onClick={(e) => handleNavClick(e, "contact")}
+              className="block px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium hover:bg-purple-600/20 border border-transparent hover:border-purple-500/30 text-white/80 hover:text-white"
+            >
+              Contact
+            </a>
+            {/* Mobile CTA Button */}
             <div className="pt-4 border-t border-purple-500/20">
               <a
                 href="#contact"
                 onClick={(e) => handleNavClick(e, "contact")}
                 className="block bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-4 rounded-2xl transition-all duration-300 text-lg font-medium shadow-lg shadow-purple-600/30 hover:shadow-purple-500/50 text-center hover:from-purple-500 hover:to-purple-700"
               >
-                Get In Touch
+                Download CV
               </a>
             </div>
           </div>

@@ -236,7 +236,10 @@ const Project = () => {
   ];
 
   return (
-    <section className="relative min-h-screen pb-20 px-6 overflow-hidden transition-colors duration-500 bg-black">
+    <section
+      id="projects"
+      className="relative min-h-screen pb-12 md:pb-20 px-4 md:px-6 overflow-hidden transition-colors duration-500 bg-black"
+    >
       {/* Background glow effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-purple-600/20 rounded-full blur-3xl"></div>
@@ -246,11 +249,11 @@ const Project = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         {/* Section Heading */}
-        <div className="text-left pl-11 mb-12 mt-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+        <div className="text-left pl-4 md:pl-11 mb-8 md:mb-12 mt-8 md:mt-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4">
             Projects
           </h2>
-          <p className="text-neutral-400 text-lg md:w-1/2">
+          <p className="text-neutral-400 text-sm sm:text-base md:text-lg md:w-1/2 pr-4">
             These projects represent my learning journey, where I experiment
             with modern technologies and transform ideas into functional
             applications.
