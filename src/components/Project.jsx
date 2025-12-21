@@ -50,6 +50,8 @@ const ProjectOne = () => {
           </a>
           <a
             href="https://travel-agency-one-self.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-1"
           >
             <svg
@@ -123,6 +125,8 @@ const ProjectTwo = () => {
           </a>
           <a
             href="https://zentry-sk.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-1"
           >
             <svg
@@ -193,6 +197,8 @@ const ProjectThree = () => {
           </a>
           <a
             href="https://brainwave-aichat.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-1"
           >
             <svg

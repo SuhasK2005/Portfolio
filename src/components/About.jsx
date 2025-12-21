@@ -139,7 +139,12 @@ const SkeletonThree = () => {
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-            <span className="text-sm md:text-base">suhask6624@gmail.com</span>
+            <a
+              href="mailto:suhask6624@gmail.com"
+              className="text-sm md:text-base hover:text-purple-400 transition-colors"
+            >
+              suhask6624@gmail.com
+            </a>
           </div>
           <div className="flex items-center gap-3">
             <svg
